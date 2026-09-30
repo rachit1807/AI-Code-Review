@@ -1,0 +1,32 @@
+/* Dark Mode */
+.dark pre[class*="language-"],
+.dark code[class*="language-"] {
+  background: #18181b !important;
+  color: #f8fafc !important;
+}
+
+/* Light Mode */
+pre[class*="language-"],
+code[class*="language-"] {
+  background: #ffffff !important;
+  color: #111827 !important;
+}
+
+/* Remove transparent backgrounds */
+.token {
+  background: transparent !important;
+}
+pre[class*="language-"] {
+  background: #1e1e1e !important;
+  color: #f8fafc !important;
+}
+
+code[class*="language-"] {
+  color: #f8fafc !important;
+  background: transparent !important;
+}
+
+pre[class*="language-"] *,
+code[class*="language-"] * {
+  color: inherit !important;
+}

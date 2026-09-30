@@ -1,0 +1,94 @@
+{
+  "hash": "027f99d5",
+  "configHash": "ea1f6842",
+  "lockfileHash": "bbe9585f",
+  "browserHash": "06ef17f3",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "e3eca128",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "ca805d36",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "bfae822c",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "2f329504",
+      "needsInterop": false
+    },
+    "prismjs": {
+      "src": "../../node_modules/prismjs/prism.js",
+      "file": "prismjs.js",
+      "fileHash": "45745f85",
+      "needsInterop": true
+    },
+    "prismjs/components/prism-javascript": {
+      "src": "../../node_modules/prismjs/components/prism-javascript.js",
+      "file": "prismjs_components_prism-javascript.js",
+      "fileHash": "8f5cc46b",
+      "needsInterop": true
+    },
+    "react-simple-code-editor": {
+      "src": "../../node_modules/react-simple-code-editor/lib/index.js",
+      "file": "react-simple-code-editor.js",
+      "fileHash": "563b21ab",
+      "needsInterop": true
+    },
+    "react-markdown": {
+      "src": "../../node_modules/react-markdown/index.js",
+      "file": "react-markdown.js",
+      "fileHash": "4d889ada",
+      "needsInterop": false
+    },
+    "remark-gfm": {
+      "src": "../../node_modules/remark-gfm/index.js",
+      "file": "remark-gfm.js",
+      "fileHash": "e02876fe",
+      "needsInterop": false
+    },
+    "jspdf": {
+      "src": "../../node_modules/jspdf/dist/jspdf.es.min.js",
+      "file": "jspdf.js",
+      "fileHash": "7ca2ed70",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "html2canvas.esm-FRPU2DAA": {
+      "file": "html2canvas__esm-FRPU2DAA.js"
+    },
+    "purify.es-DYO5EFVS": {
+      "file": "purify__es-DYO5EFVS.js"
+    },
+    "index.es-HHP263YO": {
+      "file": "index__es-HHP263YO.js"
+    },
+    "chunk-SITVF2AJ": {
+      "file": "chunk-SITVF2AJ.js"
+    },
+    "chunk-5HNGYYSW": {
+      "file": "chunk-5HNGYYSW.js"
+    },
+    "chunk-CCFQWOUR": {
+      "file": "chunk-CCFQWOUR.js"
+    },
+    "chunk-TVFQMRVC": {
+      "file": "chunk-TVFQMRVC.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}
