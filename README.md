@@ -178,6 +178,8 @@ cd AI-Code-Review
 
 The repository includes a Render Blueprint that builds the Vite frontend and serves it from the Express backend as one web service. Create a Blueprint in Render from this repository and Render will ask for the service settings declared in `render.yaml`.
 
+The Blueprint uses Render's free web service plan. Render may spin the service down after 15 minutes without traffic; the first request afterward can take about a minute to wake it up.
+
 Add these values in Render's secret environment variable form:
 
 - `MONGODB_URI`: a MongoDB Atlas connection string. Configure Atlas network access so the Render service can reach the cluster.
