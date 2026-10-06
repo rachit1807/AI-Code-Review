@@ -173,6 +173,19 @@ git clone https://github.com/rachit1807/AI-Code-Review.git
 
 cd AI-Code-Review
 ```
+
+# 🌐 Deploy on Render
+
+The repository includes a Render Blueprint that builds the Vite frontend and serves it from the Express backend as one web service. Create a Blueprint in Render from this repository and Render will ask for the service settings declared in `render.yaml`.
+
+Add these values in Render's secret environment variable form:
+
+- `MONGODB_URI`: a MongoDB Atlas connection string. Configure Atlas network access so the Render service can reach the cluster.
+- `OLLAMA_BASE_URL`: the base URL of a hosted Ollama-compatible API (for example, `https://ollama.com`).
+- `OLLAMA_API_KEY`: the provider API key, if required.
+- `OLLAMA_MODEL`: a model name supported by that endpoint.
+
+Render generates `JWT_SECRET` automatically. Keep provider keys and database credentials in Render's environment settings; do not commit them to this repository. The local defaults still support running the app with Ollama on `localhost:11434`.
 # 🖥️ Installation Guide
 
 ## 1️⃣ Clone the Repository

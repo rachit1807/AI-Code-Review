@@ -10,7 +10,7 @@ function Login({ setUser, setShowRegister }) {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/ai/get-review",
+        `${import.meta.env.VITE_API_URL || ""}/auth/login`,
         {
           email,
           password,

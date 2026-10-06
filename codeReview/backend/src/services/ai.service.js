@@ -90,11 +90,11 @@ Do NOT always return the same score.
 The scores MUST depend entirely on the submitted code.
 `;
 
-const MODELS = [
-  "qwen2.5-coder:7b",
-  "qwen2.5-coder:3b",
-  "llama3.2:latest",
-];
+const MODELS = process.env.OLLAMA_MODEL
+  ? [process.env.OLLAMA_MODEL]
+  : ["qwen2.5-coder:7b", "qwen2.5-coder:3b", "llama3.2:latest"];
+
+const ollamaBaseUrl = (process.env.OLLAMA_BASE_URL || "http://localhost:11434").replace(/\/$/, "");
 
 async function generateContent(code) {
   for (const model of MODELS) {
@@ -102,7 +102,7 @@ async function generateContent(code) {
       console.log(`Using model: ${model}`);
 
       const response = await axios.post(
-        "http://localhost:11434/api/generate",
+        `${ollamaBaseUrl}/api/generate`,
         {
           model,
           stream: false,
@@ -124,7 +124,10 @@ ${code}
           },
         },
         {
-          timeout: 120000,
+          timeout: Number(process.env.OLLAMA_TIMEOUT_MS) || 120000,
+          headers: process.env.OLLAMA_API_KEY
+            ? { Authorization: `Bearer ${process.env.OLLAMA_API_KEY}` }
+            : undefined,
         }
       );
 
