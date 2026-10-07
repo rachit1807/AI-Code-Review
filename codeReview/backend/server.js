@@ -9,12 +9,14 @@ mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("✅ MongoDB Connected");
-
-    app.listen(PORT, () => {
-      console.log(`🚀 Server started on http://localhost:${PORT}`);
-    });
   })
   .catch((err) => {
-    console.error("❌ MongoDB Connection Failed");
-    console.error(err);
+    console.error("❌ MongoDB Connection Failed; starting the app without account storage");
+    console.error(err.message);
   });
+
+// Keep the app and its health endpoint available even if MongoDB is unreachable.
+// Code review itself does not use MongoDB; only registration and login do.
+app.listen(PORT, () => {
+  console.log(`🚀 Server started on http://localhost:${PORT}`);
+});
