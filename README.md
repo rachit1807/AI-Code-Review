@@ -12,10 +12,6 @@
 
 ---
 
-## 🚀 Live Demo
-
-Try the deployed app: [https://ai-code-review-n5gt.onrender.com](https://ai-code-review-n5gt.onrender.com)
-
 # 📖 Overview
 
 AI Code Review Platform is an intelligent web application that helps developers improve the quality of their code by generating AI-powered code reviews.
